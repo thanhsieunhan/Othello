@@ -12,6 +12,17 @@
 		C7181D641DA49F47001335C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7181D621DA49F47001335C3 /* Main.storyboard */; };
 		C7181D661DA49F47001335C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7181D651DA49F47001335C3 /* Assets.xcassets */; };
 		C7181D691DA49F47001335C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7181D671DA49F47001335C3 /* LaunchScreen.storyboard */; };
+		C7181D721DA4A019001335C3 /* BoardCellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D711DA4A019001335C3 /* BoardCellState.swift */; };
+		C7181D741DA4A040001335C3 /* BoardLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D731DA4A040001335C3 /* BoardLocation.swift */; };
+		C7181D761DA4A052001335C3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D751DA4A052001335C3 /* Board.swift */; };
+		C7181D781DA4A077001335C3 /* ReversiBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D771DA4A077001335C3 /* ReversiBoard.swift */; };
+		C7181D7A1DA4A0A5001335C3 /* BoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D791DA4A0A5001335C3 /* BoardDelegate.swift */; };
+		C7181D7C1DA4A0B8001335C3 /* DelegateMulticast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D7B1DA4A0B8001335C3 /* DelegateMulticast.swift */; };
+		C7181D7E1DA4A0D5001335C3 /* MoveDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D7D1DA4A0D5001335C3 /* MoveDirection.swift */; };
+		C7181D801DA4A0ED001335C3 /* ReversiBoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D7F1DA4A0ED001335C3 /* ReversiBoardDelegate.swift */; };
+		C7181D821DA4A109001335C3 /* ComputerOpponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D811DA4A109001335C3 /* ComputerOpponent.swift */; };
+		C7181D841DA4A133001335C3 /* BoardSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D831DA4A133001335C3 /* BoardSquare.swift */; };
+		C7181D861DA4A15C001335C3 /* ReversiBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7181D851DA4A15C001335C3 /* ReversiBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		C7181D651DA49F47001335C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7181D681DA49F47001335C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7181D6A1DA49F47001335C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7181D711DA4A019001335C3 /* BoardCellState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardCellState.swift; sourceTree = "<group>"; };
+		C7181D731DA4A040001335C3 /* BoardLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardLocation.swift; sourceTree = "<group>"; };
+		C7181D751DA4A052001335C3 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C7181D771DA4A077001335C3 /* ReversiBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversiBoard.swift; sourceTree = "<group>"; };
+		C7181D791DA4A0A5001335C3 /* BoardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardDelegate.swift; sourceTree = "<group>"; };
+		C7181D7B1DA4A0B8001335C3 /* DelegateMulticast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateMulticast.swift; sourceTree = "<group>"; };
+		C7181D7D1DA4A0D5001335C3 /* MoveDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveDirection.swift; sourceTree = "<group>"; };
+		C7181D7F1DA4A0ED001335C3 /* ReversiBoardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversiBoardDelegate.swift; sourceTree = "<group>"; };
+		C7181D811DA4A109001335C3 /* ComputerOpponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerOpponent.swift; sourceTree = "<group>"; };
+		C7181D831DA4A133001335C3 /* BoardSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardSquare.swift; sourceTree = "<group>"; };
+		C7181D851DA4A15C001335C3 /* ReversiBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversiBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 		C7181D5D1DA49F47001335C3 /* Othello */ = {
 			isa = PBXGroup;
 			children = (
+				C7181D701DA4A002001335C3 /* Model */,
 				C7181D5E1DA49F47001335C3 /* AppDelegate.swift */,
 				C7181D601DA49F47001335C3 /* ViewController.swift */,
 				C7181D621DA49F47001335C3 /* Main.storyboard */,
@@ -62,6 +85,24 @@
 				C7181D6A1DA49F47001335C3 /* Info.plist */,
 			);
 			path = Othello;
+			sourceTree = "<group>";
+		};
+		C7181D701DA4A002001335C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7181D711DA4A019001335C3 /* BoardCellState.swift */,
+				C7181D731DA4A040001335C3 /* BoardLocation.swift */,
+				C7181D751DA4A052001335C3 /* Board.swift */,
+				C7181D771DA4A077001335C3 /* ReversiBoard.swift */,
+				C7181D791DA4A0A5001335C3 /* BoardDelegate.swift */,
+				C7181D7B1DA4A0B8001335C3 /* DelegateMulticast.swift */,
+				C7181D7D1DA4A0D5001335C3 /* MoveDirection.swift */,
+				C7181D7F1DA4A0ED001335C3 /* ReversiBoardDelegate.swift */,
+				C7181D811DA4A109001335C3 /* ComputerOpponent.swift */,
+				C7181D831DA4A133001335C3 /* BoardSquare.swift */,
+				C7181D851DA4A15C001335C3 /* ReversiBoardView.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +177,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7181D7E1DA4A0D5001335C3 /* MoveDirection.swift in Sources */,
 				C7181D611DA49F47001335C3 /* ViewController.swift in Sources */,
+				C7181D721DA4A019001335C3 /* BoardCellState.swift in Sources */,
+				C7181D7A1DA4A0A5001335C3 /* BoardDelegate.swift in Sources */,
+				C7181D7C1DA4A0B8001335C3 /* DelegateMulticast.swift in Sources */,
+				C7181D761DA4A052001335C3 /* Board.swift in Sources */,
+				C7181D821DA4A109001335C3 /* ComputerOpponent.swift in Sources */,
+				C7181D861DA4A15C001335C3 /* ReversiBoardView.swift in Sources */,
+				C7181D781DA4A077001335C3 /* ReversiBoard.swift in Sources */,
 				C7181D5F1DA49F47001335C3 /* AppDelegate.swift in Sources */,
+				C7181D841DA4A133001335C3 /* BoardSquare.swift in Sources */,
+				C7181D801DA4A0ED001335C3 /* ReversiBoardDelegate.swift in Sources */,
+				C7181D741DA4A040001335C3 /* BoardLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

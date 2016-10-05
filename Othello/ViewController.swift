@@ -8,18 +8,47 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ReversiBoardDelegate {
+    
+    @IBOutlet var blackScore : UILabel!
+    @IBOutlet var whiteScore : UILabel!
+    @IBOutlet var restartButton : UIButton!
+    
+    fileprivate let board: ReversiBoard
+    fileprivate let computer: ComputerOpponent
+    
+    required init(coder aDecoder: NSCoder) {
+        board = ReversiBoard()
+        board.setInitialState()
+        computer = ComputerOpponent(board: board, color: BoardCellState.black)
+        
+        super.init(coder: aDecoder)!
+        
+        board.addDelegate(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let boardFrame = CGRect(x: 88, y: 152, width: 600, height: 600)
+        let boardView = ReversiBoardView(frame: boardFrame, board: board)
+        
+        view.addSubview(boardView)
+        boardStateChanged()
+        
+        restartButton.addTarget(self, action: #selector(ViewController.restartTapped), for: UIControlEvents.touchUpInside)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func restartTapped() {
+        if board.gameHasFinished {
+            board.setInitialState()
+            boardStateChanged()
+        }
     }
-
-
+    
+    func boardStateChanged() {
+        blackScore.text = "\(board.blackScore)"
+        whiteScore.text = "\(board.whiteScore)"
+        restartButton.isHidden = !board.gameHasFinished
+    }
 }
-
