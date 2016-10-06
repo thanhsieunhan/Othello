@@ -14,13 +14,13 @@ class ViewController: UIViewController, ReversiBoardDelegate {
     @IBOutlet var whiteScore : UILabel!
     @IBOutlet var restartButton : UIButton!
     
-    fileprivate let board: ReversiBoard
-    fileprivate let computer: ComputerOpponent
+    private let board: ReversiBoard
+    private let computer: ComputerOpponent
     
     required init(coder aDecoder: NSCoder) {
         board = ReversiBoard()
         board.setInitialState()
-        computer = ComputerOpponent(board: board, color: BoardCellState.black)
+        computer = ComputerOpponent(board: board, color: BoardCellState.black, maxDepth: 5)
         
         super.init(coder: aDecoder)!
         

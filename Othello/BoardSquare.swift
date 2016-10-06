@@ -10,10 +10,10 @@ import UIKit
 
 class BoardSquare: UIView, BoardDelegate{
 
-    fileprivate let board: ReversiBoard
-    fileprivate let location: BoardLocation
-    fileprivate let blackView: UIImageView
-    fileprivate let whiteView: UIImageView
+    private let board: ReversiBoard
+    private let location: BoardLocation
+    private let blackView: UIImageView
+    private let whiteView: UIImageView
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -46,7 +46,7 @@ class BoardSquare: UIView, BoardDelegate{
         addGestureRecognizer(tapRecognizer)
     }
     
-    fileprivate func update() {
+    private func update() {
         let state = board[location]
         
         UIView.animate(withDuration: 0.2, animations: {

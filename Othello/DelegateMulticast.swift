@@ -9,12 +9,15 @@
 import Foundation
 
 class DelegateMulticast<T> {
-    fileprivate var delegates = [T]()
+    private var delegates = [T]()
     
+    
+    // thêm vào list delegates
     func addDelegate(_ delegate: T) {
         delegates.append(delegate)
     }
     
+    // lấy ra
     func invokeDelegates(_ invocation: (T) -> ()) {
         for delegate in delegates {
             invocation(delegate)

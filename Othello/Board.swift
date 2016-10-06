@@ -47,6 +47,7 @@ class Board {
         }
     }
     
+    // duyệt qua 64 cell
     func cellVisitor(_ fn: (BoardLocation) -> ()) {
         for column in 0..<boardSize {
             for row in 0..<boardSize {
@@ -56,6 +57,7 @@ class Board {
         }
     }
     
+    // đếm số ô
     func countMatches(_ fn: (BoardLocation) -> Bool) -> Int {
         var count = 0
         cellVisitor{ if fn($0) { count += 1 } }

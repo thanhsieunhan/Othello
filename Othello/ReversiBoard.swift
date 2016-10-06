@@ -30,7 +30,7 @@ class ReversiBoard: Board {
         return isValidMove(location, toState: nextMove)
     }
     
-    fileprivate func isValidMove(_ location: BoardLocation, toState: BoardCellState) -> Bool {
+    private func isValidMove(_ location: BoardLocation, toState: BoardCellState) -> Bool {
         if self[location] != BoardCellState.empty {
             return false
         }
@@ -43,7 +43,7 @@ class ReversiBoard: Board {
         return false
     }
     
-    fileprivate func flipOpponentsCounter(_ location: BoardLocation, direction: MoveDirection, toState: BoardCellState) {
+    private func flipOpponentsCounter(_ location: BoardLocation, direction: MoveDirection, toState: BoardCellState) {
         if !moveSurroundsSounters(location, direction: direction, toState: toState) {
             return
         }
@@ -59,11 +59,11 @@ class ReversiBoard: Board {
         } while (isWithinBounds(currentLocation) && currentState == opponentsState)
     }
     
-    fileprivate func checkIfGameHasFinished() -> Bool {
+    private func checkIfGameHasFinished() -> Bool {
         return !canPlayerMakeMove(BoardCellState.black) && !canPlayerMakeMove(BoardCellState.white)
     }
     
-    fileprivate func canPlayerMakeMove(_ toState: BoardCellState) -> Bool {
+    private func canPlayerMakeMove(_ toState: BoardCellState) -> Bool {
         return anyCellsMatchCondition{ self.isValidMove($0, toState: toState) }
     }
     
